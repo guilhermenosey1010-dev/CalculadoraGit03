@@ -16,9 +16,21 @@ public class calculadora03 {
 	}
 	
 	 public double dividir(int a, int b) {
-		if (b == 0) {
+		if (b == 0) {*
 		    throw new IllegalArgumentException("No se puede dividir entre cero");
 		 }
 		    return (double) a / b;
 	}
+	 public int potencia(int base, int exponente) {
+		 int resultado = 1;
+		 for (int i = 0; i < exponente; i++) {
+		 resultado *= base;
+		 }
+		 return resultado;
+		}
+	 
+		public int modulo(int a, int b) {
+		 return a % b;
+		}
+ 
 }
